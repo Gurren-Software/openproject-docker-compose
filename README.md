@@ -12,7 +12,7 @@ This repository contains the installation method for OpenProject using Docker Co
 First, you must clone the [openproject-docker-compose](https://github.com/opf/openproject-docker-compose) repository:
 
 ```shell
-git clone https://github.com/opf/openproject-docker-compose.git --depth=1 --branch=stable/16 openproject
+git clone https://github.com/opf/openproject-docker-compose.git --depth=1 --branch=stable/17 openproject
 ```
 
 Copy the example `.env` file and edit any values you want to change:
@@ -135,7 +135,7 @@ In order to install or change to BIM inside a Docker environment, please navigat
 
 Retrieve any changes from the `openproject-docker-compose` repository:
 
-    git pull origin stable/16
+    git pull origin stable/17
 
 Build the control plane:
 
