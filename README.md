@@ -32,7 +32,7 @@ sudo chown 1000:1000 -R /var/openproject/assets
 Next you start up the containers in the background while making sure to pull the latest versions of all used images.
 
 ```shell
-SECRET_KEY_BASE=OVERWRITE_ME OPENPROJECT_HTTPS=false docker compose up -d --build --pull always
+SECRET_KEY_BASE=<your-secret-key-base> OPENPROJECT_HTTPS=false docker compose up -d --build --pull always
 ```
 After a while, OpenProject should be up and running on `http://localhost:8080`. The default username and password is login: `admin`, and password: `admin`.
 The `OPENPROJECT_HTTPS=false` environment variable explicitly disables HTTPS mode for the first startup. Without this, OpenProject assumes it's running behind HTTPS in production by default.
