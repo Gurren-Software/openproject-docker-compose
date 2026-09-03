@@ -120,7 +120,7 @@ services:
   seeder:
     <<: *app
     command: "./docker/prod/seeder"
-    restart: on-failure
+    restart: "no"
     networks:
       - backend
 
